@@ -93,7 +93,7 @@ def modificarCliente():
     mostrarTodo()
 
     idc = int(input("\nID A MODIFICAR: "))
-    datos= DAO.CRUDCliente.consultaParticular(idc)
+    datos = DAO.CRUDCliente.consultaParticular(idc)
 
     if not datos:
         print("CLIENTE NO ENCONTRADO")
@@ -133,7 +133,7 @@ def eliminarCliente():
     idc = int(input("\nID DE CLIENTE A ELIMINAR: "))
     DAO.CRUDCliente.eliminar(idc)
 
-    print("\nCLIENTE ELIMINADO CORRECTAMENTE")
+    print("\nCLIENTE ELIMINADO CORRECTAMENTE" if idc else "\nERROR AL ELIMINAR CLIENTE")
     input("\nPRESIONE UNA TECLA PARA CONTINUAR...")
 
 # MENÚ
