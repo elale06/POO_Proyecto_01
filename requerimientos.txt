@@ -1,4 +1,3 @@
-> Librerias del proyecto <
 pymysql
 bcrypt
 requests
